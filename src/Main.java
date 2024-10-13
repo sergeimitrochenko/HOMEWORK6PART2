@@ -65,9 +65,21 @@ public class Main {
             while (monthhVasya < term) {
                 moneyVasya = (int) (moneyVasya * 1.07);
                 monthhVasya++;
-                if ((monthhVasya % 6) == 0)
+                if ((monthhVasya % 6) == 0) {
                     System.out.println("Месяц " + monthhVasya + ", сумма накопления равна " + moneyVasya);
+                }
             }
+            System.out.println("Задача 7");
+            int Friday = 5;
+            int friday1 = 5;
+            int mo = 31;
+            do {
+                System.out.println("Сегодня пятница, " + Friday + "-е число. Необходимо подготовить отчет");
+                Friday += 7;
+                System.out.println("Сегодня пятница, " + friday1 + "-е число. Необходимо подготовить отчет");
+                friday1 += 7;
+            }
+            while (Friday < mo);
         }
     }
 }
