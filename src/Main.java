@@ -26,5 +26,18 @@ public class Main {
             System.out.print(i + " ");
         }
         System.out.println();
+
+
+        System.out.println("Задача 3");
+        int year = 2010;
+        long people = 12_000_000;
+        int death = 8;
+        int children = 17;
+        for (; i < 10; i++) {
+            year++;
+            people += people / 1000 * (children - death);
+            System.out.println("Год " + year + ", численность населения составляет " + people);
+        }
     }
 }
+
