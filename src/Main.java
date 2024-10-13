@@ -56,6 +56,18 @@ public class Main {
             if (monthh % 6 == 0) {
                 System.out.println("Месяц " + monthh + ", сумма накопления равна " + money);
             }
+
+
+            System.out.println("Задача 6");
+            int moneyVasya = 15_000;
+            int monthhVasya = 0;
+            int term = 9 * 12;
+            while (monthhVasya < term) {
+                moneyVasya = (int) (moneyVasya * 1.07);
+                monthhVasya++;
+                if ((monthhVasya % 6) == 0)
+                    System.out.println("Месяц " + monthhVasya + ", сумма накопления равна " + moneyVasya);
+            }
         }
     }
 }
