@@ -81,8 +81,17 @@ public class Main {
             }
             while (Friday < mo);
         }
+        System.out.println("Задача 8");
+        int Year = 2024;
+        int start = Year - 200;
+        int stop = Year + 100;
+        for (i = start; i <= stop; i++)
+            if (i % 79 == 0) {
+                System.out.println(i);
+            }
     }
 }
+
 
 
 
