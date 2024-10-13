@@ -38,6 +38,15 @@ public class Main {
             people += people / 1000 * (children - death);
             System.out.println("Год " + year + ", численность населения составляет " + people);
         }
+
+        System.out.println("Задача 4");
+        int money = 15_000;
+        int moneyMax = 12_000_000;
+        int monthh = 0;
+        while (money <= moneyMax) {
+            money = (int) (money * 1.07);
+            monthh++;
+            System.out.println("Месяц " + monthh + ", сумма накопления равна " + money);
+        }
     }
 }
-
